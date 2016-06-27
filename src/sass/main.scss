@@ -1,0 +1,34 @@
+.container {
+	width: 538px;
+}
+
+.header {
+	background: #428AC9;
+	border: 2px solid darken(#428AC9, 10%);
+	border-radius: 4px;
+	color: white;
+	height: 80px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 28px;
+	padding-left: 15px;
+}
+
+.footer {
+	background: #C9DEF0;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.submitButton {
+	background: #3E82BD;
+	color: white;
+	border: 2px solid darken(#3E82BD, 10%);
+	font-size: 12px;
+	padding: 10px;
+	margin-left: 15px;
+}
