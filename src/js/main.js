@@ -7,13 +7,39 @@ var formData = $.ajax({
 });
 
 formData.then(function(data){
-	$(".container").append(`<datalist id="languages"></datalist>`);
+	// var optionString="";
+	// var optionMaker = function(item){
+	// 			return `<option value="${item.value}">${item.label}</option>`;
+	// };
 	data.forEach(function(object){
-		$(".form").append(`<i class="fa ${object.icon}" aria-hidden="true"></i><input id="${object.id}" type="${object.type}" placeholder="${object.label}">`)
+		if (object.type === "text" || object.type === "email" || object.type === "tel")
+		{
+			$(".form").append(`<i class="fa ${object.icon}" aria-hidden="true"></i><input id="${object.id}" type="${object.type}" placeholder="${object.label}">`)
+		} else if (object.type ==="select"){
+			$(".form").append(`<select id="${object.id}">${object.options.forEach(function(item){
+				return `<option value="${item.value}">${item.label}</option>`;})}</select>`);
+		}
 	});
-	console.log($(".form").html());
-	// var datalistLangs = $("#languages").html()
-	// formData.responseJSON[4].options.forEach(function(object){
+			
 
-	// }));
+
+// object.options[1]
+
+// formData.responseJSON[4]options
+
+// var languages = [];
+// 	formData.responseJSON[4]options.forEach(function(object){
+// 		languages.push(object.label);
+// 	});
+
+// 	languages.forEach(function(item){
+// 		$("#languages").append("<option value=languages[count]>")
+
+// 	document.getElementById("user-language") = `<input id="${formData.responseJSON[4].id}" type="${formData.responseJSON[4].type}" placeholder="${formData.responseJSON[4].label}" list="languages">`;
+// 	// var datalistLangs = $("#languages").html()
+// 	// formData.responseJSON[4].options.forEach(function(object){
+
+
+
+// 	// }));
 });
