@@ -39,7 +39,7 @@ body {
 	margin-left: 15px;
 }
 
-.form{
+#mainForm{
 	display: flex;
 	flex-direction: column;
 	border: 2px solid gray;
@@ -47,7 +47,7 @@ body {
 	border-bottom: 0px;
 }
 
-.form input {
+#mainForm input {
 	display: flex;
 	align-content: space-around;
 	padding-left: 25px;
@@ -61,8 +61,22 @@ body {
 	top: 28px;
 	left: 15px;
 	font-size: 10px;
+	color: gray;
 }
 
 #user-language {
 	margin-top: 17px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+#commentsBox {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+	align-content: space-around;
+	padding-left: 25px;
+	padding-top: 13px;
+	font-size: 12px;
 }
