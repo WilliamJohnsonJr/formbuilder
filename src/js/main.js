@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 var formData = $.ajax({
-	url: 'http://json-data.herokuapp.com/forms/',
+	url: 'https://json-data.herokuapp.com/forms/',
 	dataType: 'json',
 	error: console.log("We have a problem.")
 });
