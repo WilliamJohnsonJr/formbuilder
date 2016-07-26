@@ -23,7 +23,8 @@ var optionTag = function(object) {
 };
 
 var selectTag = function (object){
-	$("#mainForm").append(`<select id="${object.id}"><option value="">Select Language...</option>${object.options.map(optionTag).join('')}</select>`)
+	$("#mainForm").append(`<select id="${object.id}">
+		<option value="">Select Language...</option>${object.options.map(optionTag).join('')}</select>`)
 };
 
 formData.then(function(data){
