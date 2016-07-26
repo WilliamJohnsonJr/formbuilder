@@ -2,8 +2,7 @@ import $ from 'jquery';
 
 var formData = $.ajax({
 	url: 'https://json-data.herokuapp.com/forms/',
-	dataType: 'json',
-	error: console.log("We have a problem.")
+	dataType: 'json'
 });
 
 var textInput = function (object) {
